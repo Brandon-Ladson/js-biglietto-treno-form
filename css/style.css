@@ -1,25 +1,92 @@
+/* regole generali */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+  background-color: #b91450;
+}
+
 section{
-  /* debug */
-  border: 1px solid black;
+  padding: 0 10%;
+  text-align: center;
   margin-bottom: 20px;
+}
+
+h1{
+  color: #fff;
+}
+
+/* regole sezione del form */
+#form-section h1{
+  margin: 20px 0;
+}
+
+#form-section .row{
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+#form-section .row input{
+  padding: 5px 20px;
+  text-align: center;
+  margin: 0 50px;
+  border: solid #b91450;
+  border-radius: 5px;
+}
+
+#form-section .row button{
+  padding: 5px;
+  text-align: center;
+  color: #b91450;
+  background-color: #cccccc;
+  border: solid #808080;
+  border-radius: 5px;
+}
+
+#form-section .row button:hover{
+  border: solid #9c609d;
+  cursor: pointer;
+
+}
+
+#price-section{
+  display: none;
+}
+
+/* regole sezione del costo */
+#price-section h1{
+  margin-bottom: 10px;
 }
 
 #price-section .row{
   display: flex;
   justify-content: space-between;
-  /* debug */
-  border: 1px solid red;
+  background-color: #fff;
 }
 
-.box{
+#price-section .row:nth-of-type(2){
+  padding: 0 20px 20px 20px;
+}
+
+#price-section .row > h3{
+  margin: 20px;
+}
+
+#price-section .row .box{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 200px;
+  padding: 20px 20px;
   /* debug */
-  background-color: yellow;
+}
+
+#price-section .row .box:first-child{
+  background-color: #808080;
+  justify-content: flex-start;
 }
