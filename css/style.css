@@ -30,6 +30,16 @@ h1{
   padding: 20px 0;
 }
 
+#form-section .row form{
+  display: flex;
+  justify-content: center;
+}
+
+#form-section .row form .text{
+  margin-bottom: 10px;
+  color: #b91450;
+}
+
 #form-section .row input{
   padding: 5px 20px;
   text-align: center;
